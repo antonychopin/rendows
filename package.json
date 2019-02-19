@@ -1,0 +1,62 @@
+{
+  "name": "rendows",
+  "version": "0.0.1",
+  "description": "window layout framework",
+  "main": "src/index.tsx",
+  "scripts": {
+    "dev": "CONFIG=dev webpack-dev-server --hot --inline --watch-poll --colors --host 0.0.0.0 --port 1488",
+    "build": "CONFIG=prod webpack --progress --config webpack.config.js",
+    "build:minor": "CONFIG=prod BUILD=minor webpack --progress --config webpack.config.js",
+    "build:major": "CONFIG=prod BUILD=major webpack --progress --config webpack.config.js",
+    "commit": "version=`node -p \"require('./version').v()\"` && git add . && git commit -m \"$version $m\" && git push origin $b",
+    "commit:master": "b=master npm run commit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonychopin/rendows.git"
+  },
+  "author": "Limbo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antonychopin/rendows/issues"
+  },
+  "homepage": "https://github.com/antonychopin/rendows#readme",
+  "devDependencies": {
+    "@types/react": "^16.8.3",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-helmet": "^5.0.8",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/superagent": "^3.8.6",
+    "autoprefixer": "^9.4.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "css-loader": "^2.1.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "ignore-loader": "^0.1.2",
+    "imports-loader": "^0.8.0",
+    "json-loader": "^0.5.7",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "script-ext-html-webpack-plugin": "^2.1.3",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "ts-polyfill": "^3.3.3",
+    "typescript": "^3.3.3",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "mobx": "^4.9.0",
+    "mobx-react": "^5.4.3",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.3.1",
+    "superagent": "^4.1.0"
+  }
+}
