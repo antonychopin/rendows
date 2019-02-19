@@ -15,7 +15,7 @@ Current milestone: **Minimal working framework**.
 - [ ] Start menu
 - [ ] Explorer
 
-### Move to `npm`-package milestone
+### Move to `npm` package milestone
 - [ ] "Filesystem"
 - [ ] Desktop
 - [ ] Window
